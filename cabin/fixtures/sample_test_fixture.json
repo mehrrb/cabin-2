@@ -338,20 +338,20 @@
     "model": "cabin.ride",
     "pk": 1,
     "fields": {
-      "pickup_time": 1504069175,
-      "dropoff_time": 1504079915,
+      "pickup_time": "2017-08-31T17:12:55Z",
+      "dropoff_time": "2017-08-31T20:51:55Z",
       "car": 3,
       "request": 1,
       "rider_rating": 4.0,
       "driver_rating": 7.0
     }
   },
-   {
+  {
     "model": "cabin.ride",
     "pk": 5,
     "fields": {
-      "pickup_time": 1504269175,
-      "dropoff_time": 1504279915,
+      "pickup_time": "2017-09-02T13:46:15Z",
+      "dropoff_time": "2017-09-02T14:51:55Z",
       "car": 2,
       "request": 2,
       "rider_rating": 6.0,
@@ -362,8 +362,8 @@
     "model": "cabin.ride",
     "pk": 2,
     "fields": {
-      "pickup_time": 1503668615,
-      "dropoff_time": 1503679535,
+      "pickup_time": "2017-08-27T11:43:35Z",
+      "dropoff_time": "2017-08-27T14:45:35Z",
       "car": 5,
       "request": 3,
       "rider_rating": 8.0,
@@ -374,8 +374,8 @@
     "model": "cabin.ride",
     "pk": 3,
     "fields": {
-      "pickup_time": 1501581215,
-      "dropoff_time": 1501589915,
+      "pickup_time": "2017-07-31T09:06:55Z",
+      "dropoff_time": "2017-07-31T10:38:35Z",
       "car": 3,
       "request": 4,
       "rider_rating": 9.0,
@@ -386,8 +386,8 @@
     "model": "cabin.ride",
     "pk": 4,
     "fields": {
-      "pickup_time": 1501222175,
-      "dropoff_time": 1501230215,
+      "pickup_time": "2017-07-30T03:16:15Z",
+      "dropoff_time": "2017-07-30T04:16:55Z",
       "car": 7,
       "request": 5,
       "rider_rating": 10.0,
