@@ -1,14 +1,9 @@
 from django.contrib import admin
-from .models import *
-
-
-@admin.register(Account)
-class AccountAdmin(admin.ModelAdmin):
-    list_display = ('first_name', 'last_name', 'email', 'phone', 'content_type', 'object_id')
+from .models import Rider, Driver, Car, RideRequest, Ride, Payment
 
 
 @admin.register(Rider)
-class AdminAdmin(admin.ModelAdmin):
+class RiderAdmin(admin.ModelAdmin):
     list_display = ('rating', 'x', 'y')
 
 
@@ -23,7 +18,7 @@ class DriverAdmin(admin.ModelAdmin):
 
 
 @admin.register(RideRequest)
-class AccountAdmin(admin.ModelAdmin):
+class RideRequestAdmin(admin.ModelAdmin):
     list_display = ('rider', 'x', 'y', 'car_type')
 
 

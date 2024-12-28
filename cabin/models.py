@@ -3,6 +3,7 @@ from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelatio
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
+from users.models import Account
 
 # Choices for car types
 car_type_choices = (
@@ -10,20 +11,6 @@ car_type_choices = (
     ('B', 'Class B'),
     ('C', 'Class C'),
 )
-
-class Account(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    email = models.EmailField(max_length=70, unique=True)
-    phone = models.CharField(max_length=15, unique=True, primary_key=True)
-    password = models.CharField(max_length=50)
-
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, default=None)
-    object_id = models.PositiveIntegerField(default=None)
-    content_object = GenericForeignKey()
-
-    class Meta:
-        unique_together = ('content_type', 'object_id',)
 
 class Admin(models.Model):
     account = GenericRelation(Account, related_query_name='admins')
